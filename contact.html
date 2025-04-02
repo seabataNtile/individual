@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with IWB - Reach Out Today</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('xx.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ecf0f1; /* Light color for better readability on dark background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(44, 62, 80, 0.8);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        header nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #3498db;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(52, 73, 94, 0.8); /* Dark semi-transparent background */
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: #3498db; /* Highlight color */
+            margin-bottom: 35px;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-item, .animated-text-box {
+            text-align: center;
+            padding: 30px;
+            background: rgba(44, 62, 80, 0.7); /* Dark semi-transparent item background */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item:hover, .animated-text-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .contact-item h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .contact-item p {
+            line-height: 1.7;
+            color: #ecf0f1;
+            font-size: 1.1em;
+        }
+
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 20px;
+            font-size: 1.5em;
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+        }
+
+        .animated-text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3498db;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        @keyframes breathing {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .breathing-text {
+            animation: breathing 5s infinite ease-in-out;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.8);
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <h2>Let's Connect</h2>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email Us</h3>
+                <p><a href="mailto:ntile@gmail.com">ntile@gmail.com</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Call Us</h3>
+                <p>+266 57030197</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Visit Us</h3>
+                <p>Maseru, Lesotho</p>
+            </div>
+
+            <div class="animated-text-box">
+                <span class="breathing-text">Your Trusted Technology!</span>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">WhatsApp</a> |
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 IWB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

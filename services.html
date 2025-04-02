@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Solutions - IWB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .software-container {
+            width: 80%;
+            margin: 30px auto;
+            background: whitesmoke;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .software-header {
+            background: darkslategray;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .software-item, .image-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .software-item:hover, .image-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .software-item h3 {
+            color: black;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .software-item p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .image-item {
+            grid-column: span 2; /* Span two columns */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="software-container">
+        <div class="software-header">
+            Our Software Solutions
+        </div>
+        <div class="software-grid">
+            <div class="software-item">
+                <h3>Visionary Data Retriever</h3>
+                <p>Advanced tool to reconstruct and retrieve data from severely damaged storage devices. Recovers files from formatted, deleted, or corrupted drives.</p>
+            </div>
+            <div class="software-item">
+                <h3>Sentinel Secure Eraser</h3>
+                <p>Software to obliterate sensitive data, ensuring complete and irreversible deletion. Compliant with multiple international data sanitization standards.</p>
+            </div>
+            <div class="software-item">
+                <h3>Apex System Recovery</h3>
+                <p>Restore entire systems and partitions with precision, minimizing downtime and data loss. Recovers operating systems and partitions efficiently.</p>
+            </div>
+            <div class="software-item">
+                <h3>Quantum File Annihilator</h3>
+                <p>Completely destroy files with multiple overwrite algorithms, guaranteeing data security and compliance with privacy regulations.</p>
+            </div>
+            <div class="image-item">
+                <img src="data.jpg" alt="Software Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 IWB. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
